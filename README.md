@@ -1,51 +1,81 @@
-# Kalkulator Digital
+# 🧮 Kalkulator Digital
 
-Proyek Kalkulator Digital untuk mata kuliah **Sistem Digital — Semester 8**. Aplikasi ini dibangun menggunakan Next.js 16 dan Tailwind CSS, dengan fokus pada fungsionalitas multi-mode dan desain yang modern serta responsif.
+![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=next.js)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3-38bdf8?logo=tailwindcss)
+![Playwright](https://img.shields.io/badge/Tested_with-Playwright-45ba4b?logo=playwright)
+![License](https://img.shields.io/badge/License-Academic-blue)
+![Status](https://img.shields.io/badge/Status-Live-brightgreen)
 
-## 🚀 Fitur Utama
+> Kalkulator berbasis web dengan 4 mode: Standard, Scientific, Programmer, dan Converter.  
+> Dibangun dengan Next.js 16 + Tailwind CSS. Responsif di desktop maupun mobile.
 
-Aplikasi ini mendukung 4 mode utama:
+🔗 **Live Demo:** [kalkulator-digital.vercel.app](https://kalkulator-digital.vercel.app)
 
-1.  **Standard Mode**: Operasi aritmatika dasar (+, -, ×, ÷), persen, akar kuadrat, pangkat dua, dan memori.
-2.  **Scientific Mode**: Fungsi trigonometri (sin, cos, tan), logaritma, eksponensial, faktorial, dan konstanta matematika (π, e). Mendukung mode DEG (Degree) dan RAD (Radian).
-3.  **Programmer Mode**: Konversi basis bilangan (HEX, DEC, OCT, BIN) secara real-time dan operasi bitwise (AND, OR, XOR, NOT, Lsh, Rsh).
-4.  **Converter Mode**: Konversi satuan untuk berbagai kategori seperti Panjang, Berat, Suhu, Luas, dan Kecepatan.
+---
+
+## ✨ Fitur
+
+### 🔢 Standard
+Operasi dasar: `+` `−` `×` `÷`, persen, akar kuadrat, pangkat dua, inverse, serta **Memory** (MC/MR/M+/M−) dan **History** kalkulasi.
+
+### 🔬 Scientific
+Fungsi trigonometri (`sin`, `cos`, `tan`), logaritma (`log`, `ln`), eksponen, faktorial (`n!`), konstanta `π` dan `e`. Mendukung mode **DEG** dan **RAD**.
+
+### 💻 Programmer
+Konversi basis bilangan real-time: **HEX / DEC / OCT / BIN**.  
+Operasi bitwise: `AND` `OR` `XOR` `NOT` `Lsh` `Rsh`.
+
+### 🔄 Converter
+Konversi satuan lintas kategori:
+- 📏 Panjang, ⚖️ Berat, 🌡️ Suhu, 📐 Luas, 💨 Kecepatan
+- 💾 Data (bit → TB), 📐 Sudut (deg ↔ rad ↔ grad)
+
+---
 
 ## 🛠️ Tech Stack
 
-- **Framework**: Next.js 16 (App Router)
-- **Styling**: Tailwind CSS
-- **Testing**: Playwright
-- **Language**: JavaScript (Vanilla)
+| Teknologi | Keterangan |
+|-----------|------------|
+| Next.js 16 | App Router, tanpa Turbopack |
+| Tailwind CSS | Styling utility-first |
+| JavaScript | Vanilla JS, tanpa TypeScript |
+| Playwright | End-to-end testing |
+| Vercel | Hosting & auto-deploy |
 
-## 💻 Cara Menjalankan
+---
 
-### Development Mode
+## 🚀 Cara Menjalankan Lokal
+
 ```bash
+# Install dependencies
 npm install
+
+# Jalankan development server
 npm run dev
 ```
-Buka [http://localhost:3000](http://localhost:3000) di browser Anda.
 
-### Production Build
+Buka [http://localhost:3000](http://localhost:3000) di browser.
+
 ```bash
+# Build production
 npm run build
 npm run start
 ```
 
-## 🧪 Pengujian
+---
 
-Proyek ini menggunakan Playwright untuk pengujian otomatis (E2E).
+## 🧪 Testing
 
-### Menjalankan Semua Test
+Menggunakan **Playwright** untuk pengujian E2E otomatis.
+
 ```bash
+# Jalankan semua test
 npm run test
-```
 
-### Menjalankan Test dengan UI
-```bash
+# Jalankan dengan UI Playwright
 npm run test:ui
 ```
 
 ---
-*Dikembangkan oleh Yogi Prasetyo sebagai bagian dari tugas akademik.*
+
+## 📁 Struktur Project
