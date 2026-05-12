@@ -79,3 +79,22 @@ npm run test:ui
 ---
 
 ## 📁 Struktur Project
+
+```text
+kalkulator-digital/
+├── public/              # Aset statis (favicon, logo, dll)
+├── src/
+│   ├── app/             # Routing & Layout (Next.js App Router)
+│   │   ├── globals.css  # Styling global (Tailwind)
+│   │   ├── layout.js    # Root layout (Header & Sidebar wrapper)
+│   │   └── page.js      # Main page (Logic switch mode)
+│   └── components/      # Komponen Kalkulator per Mode
+│       ├── Converter.js
+│       ├── ProgrammerCalc.js
+│       ├── ScientificCalc.js
+│       ├── Sidebar.js   # Navigasi mode
+│       └── StandardCalc.js
+├── tests/               # Automated Tests (Playwright)
+├── package.json         # Dependencies & Scripts
+└── playwright.config.js # Konfigurasi Playwright
+```
