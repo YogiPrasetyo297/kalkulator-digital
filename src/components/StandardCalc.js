@@ -257,13 +257,11 @@ export default function StandardCalc() {
           const memVal = formatValue(memory);
           setExpression((expr) => {
             if (expr && /[\+\-×÷]$/.test(expr)) {
-              const newExpr = expr + memVal;
-              setDisplay(newExpr);
-              return newExpr;
+              return expr + memVal;
             }
-            setDisplay(memVal);
             return memVal;
           });
+          setDisplay(memVal);
           setOverwrite(true);
         }
         break;
